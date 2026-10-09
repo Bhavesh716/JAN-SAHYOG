@@ -3,7 +3,7 @@
 
 <p align="center">
 <b>"One Voice. Many Services. Every Citizen."</b>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
 
 <br>
 <br>
