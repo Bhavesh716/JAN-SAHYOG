@@ -229,56 +229,7 @@ The system should not claim that an application has been approved, a complaint h
 
 JAN SAHYOG follows a connected workflow in which the physical kiosk captures the user's request and the backend processes it using the appropriate AI and knowledge components.
 
-```text
-         FARMER / COOPERATIVE MEMBER
-                      |
-                      v
-              AI SEVA KIOSK
-        Touchscreen | Microphone
-           Camera | Document Scan
-                      |
-                      v
-            KIOSK COMPUTE UNIT
-        User Interface & Input Handling
-                      |
-                      v
-          SECURE API COMMUNICATION
-             Cellular / Wi-Fi
-                      |
-                      v
-             FASTAPI BACKEND
-        Authentication & Request Routing
-                      |
-                      v
-                 JEv AI
-        Intent Detection & Orchestration
-                      |
-             +--------+--------+
-             |                 |
-             v                 v
-       RAG KNOWLEDGE      SERVICE / TOOL
-          RETRIEVAL        INTEGRATIONS
-             |                 |
-             v                 |
-      OFFICIAL DOCUMENTS       |
-      Laws, Schemes, PACS      |
-             |                 |
-             +--------+--------+
-                      |
-                      v
-          LOCAL / PRIVATE LLM
-        Answer Generation & Explanation
-                      |
-                      v
-           RESPONSE VALIDATION
-         Sources, Relevance & Safety
-                      |
-                      v
-           VOICE + TEXT RESPONSE
-                      |
-                      v
-                THE USER
-```
+<p align="center"> <img src="assets/architecture.png" alt="System Architecture" width="900"/> </p>
 
 The language model, retrieval system, and backend can run on government-controlled server infrastructure. The kiosk acts as the user-facing terminal, while its embedded controller manages appropriate device-level functions.
 
@@ -368,18 +319,7 @@ The user can continue the conversation, request clarification, or follow the pro
 
 The hardware layer makes JAN SAHYOG more than a conventional chatbot.
 
-| Component | Purpose |
-|---|---|
-| Touchscreen Display | Shows the interface, instructions, and answers |
-| Microphone | Captures voice queries |
-| Speaker | Plays spoken responses |
-| Camera | Supports document capture and other approved visual input |
-| Document / QR Scanner | Reads supported forms or QR codes |
-| Kiosk Compute Unit | Runs the kiosk interface and manages user interaction |
-| ESP32-S3 Controller | Handles suitable embedded control and peripheral tasks |
-| Cellular SIM Module | Provides mobile network connectivity |
-| Wi-Fi Module / Interface | Provides an alternative network connection where available |
-| Power Supply / UPS | Powers the kiosk and can support backup operation |
+<p align="center"> <img src="assets/hardware-architecture.png" alt="Hardware Architecture" width="900"/> </p>
 
 **Hardware design note:** An ESP32-S3 alone is not intended to run a full large-screen kiosk interface and a server-scale language model. The proposed design separates the kiosk's main computing unit from the embedded controller. AI inference can run on the private server.
 
@@ -592,30 +532,7 @@ Contains utility scripts for document ingestion, knowledge-base updates, and oth
 
 Government schemes, circulars, and regulations can change. The knowledge base therefore needs a reliable update process.
 
-```text
-Official Documents
-        |
-        v
-Source & Version Checks
-        |
-        v
-Text Extraction / OCR
-        |
-        v
-Cleaning & Processing
-        |
-        v
-Chunking & Embeddings
-        |
-        v
-Vector Database Indexing
-        |
-        v
-Retrieval & Answer Evaluation
-        |
-        v
-Available to the AI System
-```
+<p align="center"> <img src="assets/knowledgebase-updation.png" alt="Knowledge Base Updation Workflow" width="900"/> </p>
 
 The system should retain useful document metadata, such as the source, publication date, version, and applicable scheme or department.
 
