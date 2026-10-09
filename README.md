@@ -27,7 +27,7 @@
 
 ---
 
-<p align="center"> <img src="assets/logo.png" alt="LOGO" width="400"/> </p>
+<p align="center"> <img src="assets/logo.png" alt="LOGO" width="500"/> </p>
 
 JAN SAHYOG is an AI-powered, multilingual rural assistance platform designed to help farmers, cooperative members, and rural citizens access reliable information about government schemes, cooperative governance, agricultural support, financial literacy, and grievance redressal.
 
