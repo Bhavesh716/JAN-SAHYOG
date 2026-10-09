@@ -15,7 +15,7 @@
 ![Status](https://img.shields.io/badge/Status-Active%20Development-4F46E5?style=for-the-badge)
 ![Flutter](https://img.shields.io/badge/Flutter-Mobile-02569B?style=for-the-badge&logo=flutter)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi)
-![Local AI](https://img.shields.io/badge/AI-On--Device-8B5CF6?style=for-the-badge)
+![Local AI](https://img.shields.io/badge/LLM-On--Device-8B5CF6?style=for-the-badge)
 ![RAG](https://img.shields.io/badge/RAG-Verified%20Knowledge-16A34A?style=for-the-badge)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql)
 ![Redis](https://img.shields.io/badge/Redis-Cache-DC382D?style=for-the-badge&logo=redis)
