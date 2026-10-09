@@ -1,0 +1,46 @@
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Runtime data and user uploads
+data/source_documents/*
+data/processed/*
+data/vector_store/*
+!data/source_documents/.gitkeep
+!data/processed/.gitkeep
+!data/vector_store/.gitkeep
+uploads/
+logs/
+*.log
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
